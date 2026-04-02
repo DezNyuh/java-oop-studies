@@ -1,5 +1,40 @@
 package exercicios;
 
-public class exercicios5_2 {
+import java.util.Locale;
+import java.util.Scanner;
 
+import exercicios.entities.Employee;
+
+public class exercicios5_2 {
+	public static void main (String[]args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		Employee employee = new Employee();
+		System.out.print("Name: ");
+		employee.name = sc.nextLine();
+		
+		System.out.print("Gross Salary: ");
+		employee.grossSalary = sc.nextDouble();
+		
+		System.out.print("Tax: ");
+		employee.tax = sc.nextDouble();
+		
+		System.out.println();
+		System.out.println(employee);
+		
+		System.out.println("Which percentage to increase salary? ");
+		employee.increaseSalary(employee);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
 }
