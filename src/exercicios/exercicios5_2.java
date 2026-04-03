@@ -22,12 +22,14 @@ public class exercicios5_2 {
 		employee.tax = sc.nextDouble();
 		
 		System.out.println();
-		System.out.println(employee);
+		System.out.println("Employee: " + employee);
 		
-		System.out.println("Which percentage to increase salary? ");
-		employee.increaseSalary(employee);
+		System.out.println();
+		System.out.printf("Which percentage to increase salary? ");
+		employee.increaseSalary(sc.nextDouble());
 		
-		
+		System.out.println();
+		System.out.printf("Updated data: " + employee);
 		
 		
 		
