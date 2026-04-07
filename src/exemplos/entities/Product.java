@@ -2,11 +2,12 @@ package exemplos.entities;
 
 public class Product {
 
-	private String name;
+	String name;
 	private double price;
 	private int quantity;
 
 	public Product() {
+		
 	}
 
 	public Product(String name, double price, int quantity) {

@@ -18,6 +18,8 @@ public class class_atributos_metodos_02 {
 		double price = sc.nextDouble();
 		Product product = new Product(name, price);
 		
+		System.out.println(product.name);
+		
 		product.setName("Computer");
 		System.out.println("Updated name: " + product.getName());
 		product.setPrice(1200.00);
