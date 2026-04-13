@@ -1,3 +1,4 @@
+package exercicios.basics;
 import java.util.Locale;
 
 public class primeiro_codigo {
