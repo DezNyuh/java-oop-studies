@@ -10,21 +10,23 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Quantas pessoas seram digitadas?");
+		System.out.print("Quantas pessoas serão digitadas?");
 		int n = sc.nextInt();
 		
 		String[] nomes = new String[n];
 		int[] idades = new int[n];
 		double[] alturas = new double[n];
 		
+		sc.nextLine();
 		for(int i=0; i<n ; i++) {
 			System.out.printf("Dados da %da pessoa: %n", i + 1);
 			System.out.print("Nome: ");
-			nomes[i] = sc.next();
+			nomes[i] = sc.nextLine();
 			System.out.print("Idade: ");
 			idades[i] = sc.nextInt();
 			System.out.print("Altura: ");
 			alturas[i] = sc.nextDouble();
+			sc.nextLine();
 		}
 		
 		double sum = 0.0;
@@ -33,12 +35,12 @@ public class Program {
 		}
 		
 		double avg = sum / n;
-		System.out.printf("ALTURA MÉDIA: %.2f%n", avg);
+		System.out.printf("Altura média: %.2f%n", avg);
 		
 		double menorDeIdade = 0.0;
 		for(int i=0; i<n; i++) {
 			if (idades[i]<16) {
-				menorDeIdade += 1;
+				menorDeIdade ++;
 			}
 		}
 		
