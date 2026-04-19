@@ -1,4 +1,4 @@
-package exercicio_alturas;
+package exercicio.alturas;
 
 import java.util.Locale;
 import java.util.Scanner;
